@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset do Browser */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* HEADER - Menu */
+.menu{
+    background-color: #FF9A6C;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 80px;   
+}
+
+.menu nav a {
+    color: #FFF;
+    font-weight: 600;
+    padding: 20px;
+    text-decoration: none;
+}
+
+/* Fixar Menu - Topo */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* O header ocupa 100% da tela */
+    z-index: 100; /* Coloca o header acima de outros elementos */
+}
+
+
+
+/* Config da Seção INÍCIO */
+
+#inicio {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 80px 24px 80px;
+    position: relative;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 32px;
+}
+
+.paragrafo {
+    line-height: 150%;
+    margin-bottom: 64px;
+    margin-top: 50px;
+}
+
+.botao {
+    background-color: #FF9A6C;
+    border-radius: 8px;
+    color: #FFF;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: #FF725E;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.img{
+    margin-top: 125px;
+    margin-bottom: 125px;
+
+}
+
+
+.absolute {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    z-index: -10;
+}
+
+
+/* Config da Seção CLÍNICA */
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 80px 24px 80px;
+    position: relative;
+    margin-bottom: 150px;
+    margin-top: 20px;
+}
+
+
+li {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+ul{
+    margin-bottom: 80px;
+}
