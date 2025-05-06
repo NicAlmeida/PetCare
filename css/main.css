@@ -162,3 +162,39 @@ ul{
     margin-right: 400px;
 }
 
+
+
+/* Config da Seção DÚVIDAS */
+#duvidas {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 64px;
+    padding: 80px;
+}
+
+
+.duvida{
+    position: relative;
+}
+
+.duvida h3{
+    border: 2px solid #FF725E;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border-right: 1px solid #FF725E;
+    border-bottom: 1px solid #FF725E;
+    border-left: 1px solid #FF725E;
+    border-radius: 0 0 8px 8px;
+    margin-top: -23px;
+}
+
