@@ -103,3 +103,29 @@ h1 {
     width: 100%;
     z-index: -10;
 }
+
+
+/* Config da Seção CLÍNICA */
+#clinica {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding: 80px 80px 24px 80px;
+    position: relative;
+    margin-bottom: 90px;
+    margin-top: 20px;
+}
+
+.titulo-clinica{
+    margin-top: 80px;
+}
+
+li {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+ul{
+    margin-bottom: 80px;
+}
+
