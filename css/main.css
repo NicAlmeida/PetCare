@@ -159,3 +159,57 @@ ul{
     margin-left: 400px;
     margin-right: 400px;
 }
+
+/* Config da Seção DÚVIDAS */
+#duvidas {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 64px;
+    padding: 80px;
+}
+
+.duvidas-container{
+    margin-top: 110px;
+}
+
+.duvidas-title{
+    margin-bottom: 20px;
+}
+
+.duvida{
+    position: relative;
+}
+
+.duvida h3{
+    border: 2px solid #FF725E;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.duvida img{
+    position: absolute;
+    top: 32px;
+    right: 24px;
+}
+
+.duvida .paragrafo{
+    border-right: 2px solid #FF725E;
+    border-bottom: 2px solid #FF725E;
+    border-left: 2px solid #FF725E;
+    border-radius: 0 0 8px 8px;
+    margin-top: -6px;
+
+    padding: 10px 24px;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.duvida.ativa .paragrafo{
+    opacity: 1;
+    height: fit-content;
+    overflow: 24px;
+    padding: 24px 24px 10px 24px;
+}
