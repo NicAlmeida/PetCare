@@ -1,130 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetCare</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="menu">
-        <a href="index.html">
-            <img src="img/logo-white.svg" alt="logo petcare">
-        </a>
+      <a href="index.html">
+        <img src="img/logo-white.svg" alt="logo petcare" />
+      </a>
 
-        <nav>
-            <a href="#inicio">Início</a>
-            <a href="#clinica">Clínica</a>
-            <a href="#farmacia">Farmácia</a>
-            <a href="#duvidas">Dúvidas</a>
-        </nav>
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#clinica">Clínica</a>
+        <a href="#farmacia">Farmácia</a>
+        <a href="#duvidas">Dúvidas</a>
+      </nav>
     </header>
 
     <main>
-        <!-- inicio -->
-        <section id="inicio">
-            <img src="img/start-img.svg" alt="Uma humana com seu pet" width="580" height="580" class="img">
+      <!-- inicio -->
+      <section id="inicio">
+        <img
+          src="img/start-img.svg"
+          alt="Uma humana com seu pet"
+          width="580"
+          height="580"
+          class="img"
+        />
 
-            <div>
-                <h1>
-                    Cuidados para dar uma vida longa ao seu pet
-                </h1>
+        <div>
+          <h1>Cuidados para dar uma vida longa ao seu pet</h1>
 
-                <p class="paragrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut dolores voluptates voluptatibus commodi reprehenderit totam ipsam nam ducimus suscipit! Voluptate quisquam obcaecati ad unde quo et fugit cupiditate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis fuga adipisci quis earum est, laudantium nulla, molestiae facilis quo repellat deserunt deleniti dolorem! Dolorem est corporis illo placeat. Cumque?
-                </p>
+          <p class="paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut
+            dolores voluptates voluptatibus commodi reprehenderit totam ipsam
+            nam ducimus suscipit! Voluptate quisquam obcaecati ad unde quo et
+            fugit cupiditate officia. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Sunt perspiciatis fuga adipisci quis earum est,
+            laudantium nulla, molestiae facilis quo repellat deserunt deleniti
+            dolorem! Dolorem est corporis illo placeat. Cumque?
+          </p>
 
+          <a class="botao" href="https://wa.me/55999887766" target="_blank"
+            >Marque uma consulta</a
+          >
+          <a class="botao-transparente" href="#clinica"
+            >Conheça nossa clínica</a
+          >
+        </div>
 
-                <a class="botao" href="https://wa.me/55999887766" target="_blank">Marque uma consulta</a>
-                <a class="botao-transparente" href="#clinica">Conheça nossa clínica</a>
+        <img class="absolute" src="./img/shape.svg" alt="banner-decorativo" />
+      </section>
 
-            </div>
+      <!-- clinica -->
+      <section id="clinica">
+        <div>
+          <h1 class="titulo-clinica">Cuidados veterinário de qualidade</h1>
 
-            <img class="absolute" src="./img/shape.svg" alt="banner-decorativo">
+          <p class="paragrafo">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut
+            dolores voluptates voluptatibus commodi reprehenderit totam ipsam
+            nam ducimus suscipit! Voluptate quisquam obcaecati ad unde quo et
+            fugit cupiditate officia. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Sunt perspiciatis fuga adipisci quis earum est,
+            laudantium nulla, molestiae facilis quo repellat deserunt deleniti
+            dolorem! Dolorem est corporis illo placeat. Cumque? Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quasi adipisci numquam
+            ipsam blanditiis sed. Accusantium aliquid voluptas dolor dolorum
+            labore assumenda, eum voluptate eius a animi similique id quidem
+            harum!
+          </p>
+          <ul>
+            <li>Consultas e Exames de Rotina</li>
+            <li>Vacinação e Imunização</li>
+            <li>Cirurgias e Procedimentos Veterinários</li>
+            <li>Tratamento e Controles de doenças</li>
+            <li>Odontologia e Veterinária</li>
+            <li>Atendimento de Emergencia 24h</li>
+            <li>Nutrição e Aconselhamento alimentar personalizado</li>
+          </ul>
 
-        </section>
+          <a class="botao" href="https://wa.me/55999887766" target="_blank"
+            >Agendar consulta</a
+          >
+          <a class="botao-transparente" href="#"> Como chegar? </a>
+        </div>
 
-         <!-- clinica -->    
-        <section id="clinica">
+        <img
+          src="img/clinic-img.svg"
+          alt="Uma humana com seu pet"
+          width="580"
+          height="580"
+        />
+      </section>
 
-            <div>
-                <h1 class="titulo-clinica">Cuidados veterinário de qualidade</h1>
+      <!-- Farmácia -->
+      <section id="farmacia">
+        <div class="farmacia-container">
+          <h1>Venha conferir nosso petshop e farmácia</h1>
 
-                <p class="paragrafo">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere ut dolores voluptates voluptatibus commodi reprehenderit totam ipsam nam ducimus suscipit! Voluptate quisquam obcaecati ad unde quo et fugit cupiditate officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perspiciatis fuga adipisci quis earum est, laudantium nulla, molestiae facilis quo repellat deserunt deleniti dolorem! Dolorem est corporis illo placeat. Cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi adipisci numquam ipsam blanditiis sed. Accusantium aliquid voluptas dolor dolorum labore assumenda, eum voluptate eius a animi similique id quidem harum!
-                </p>
-                <ul>
-                    <li>Consultas e Exames de Rotina</li>
-                    <li>Vacinação e Imunização</li>
-                    <li>Cirurgias e Procedimentos Veterinários</li>
-                    <li>Tratamento e Controles de doenças</li>
-                    <li>Odontologia e Veterinária</li>
-                    <li>Atendimento de Emergencia 24h</li>
-                    <li>Nutrição e Aconselhamento alimentar personalizado</li>
-                </ul>
+          <img
+            src="./img/shop-img.svg"
+            alt="recepcionista em uma farmácia"
+            class="img-farmacia"
+          />
 
-                <a class="botao" href="https://wa.me/55999887766" target="_blank">Agendar consulta</a>
-                <a class="botao-transparente" href="#"> Como chegar? </a>
+          <p class="paragrafo-farmacia">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea
+            explicabo saepe laudantium ipsa totam nesciunt necessitatibus
+            assumenda aliquid, sequi odio blanditiis a, soluta harum rerum.
+            Pariatur deleniti mollitia in earum. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Eos sunt saepe quisquam rem maxime
+            ullam quis aut qui, itaque ea beatae. Esse delectus repellendus
+            pariatur nisi nostrum molestiae reprehenderit atque. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Hic, harum quae neque
+            non corporis ipsum a sapiente cum natus reiciendis iure consequatur
+            dolorum esse.
+          </p>
+        </div>
+      </section>
 
-            </div>
+      <!-- Dúvidas -->
+      <section id="duvidas">
+        <img
+          src="img/faq-img.svg"
+          alt="Dois humanos tirando dúvidas"
+          width="580"
+          height="580"
+        />
 
-            <img src="img/clinic-img.svg" alt="Uma humana com seu pet" width="580" height="580">
+        <div class="duvidas-container">
+          <h2 class="duvidas-title">Ficou alguma dúvida?</h2>
+          <br />
 
-        </section>
+          <div class="duvida">
+            <h3>Quais serviços são oferecidos pela clínica?</h3>
+            <img src="./img/arrow-down.svg" alt="icone, seta para baixo" />
+            <p class="paragrafo">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam.
+              Consequatur voluptatum sunt explicabo quibusdam ipsam facilis
+              vero, eius quis nam!
+            </p>
+          </div>
 
-        <!-- Farmácia -->
-        <section id="farmacia">
-                
-            <div class="farmacia-container">
-                <h1>Venha conferir nosso petshop e farmácia</h1>
+          <div class="duvida">
+            <h3>Quais espécies de animais a clínica atende?</h3>
+            <img src="./img/arrow-down.svg" alt="icone, seta para baixo" />
+            <p class="paragrafo">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam.
+              Consequatur voluptatum sunt explicabo quibusdam ipsam facilis
+              vero, eius quis nam!
+            </p>
+          </div>
 
-                <img src="./img/shop-img.svg" alt="recepcionista em uma farmácia" class="img-farmacia">
+          <div class="duvida">
+            <h3>A clínica possui serviço de emergência?</h3>
+            <img src="./img/arrow-down.svg" alt="icone, seta para baixo" />
+            <p class="paragrafo">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam.
+              Consequatur voluptatum sunt explicabo quibusdam ipsam facilis
+              vero, eius quis nam!
+            </p>
+          </div>
 
-                <p class="paragrafo-farmacia">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea explicabo saepe laudantium ipsa totam nesciunt necessitatibus assumenda aliquid, sequi odio blanditiis a, soluta harum rerum. Pariatur deleniti mollitia in earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt saepe quisquam rem maxime ullam quis aut qui, itaque ea beatae. Esse delectus repellendus pariatur nisi nostrum molestiae reprehenderit atque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, harum quae neque non corporis ipsum a sapiente cum natus reiciendis iure consequatur dolorum esse.</p>
-            </div>
-        </section>
-
-
-        <!-- Dúvidas -->
-        <section id="duvidas">
-            <img src="img/faq-img.svg" alt="Dois humanos tirando dúvidas" width="580" height="580">
-
-            <div class="duvidas-container">
-                <h2 class="duvidas-title">Ficou alguma dúvida?</h2><br>
-
-
-                <div class="duvida"> 
-                    <h3>Quais serviços são oferecidos pela clínica?</h3>
-                    <img src="./img/arrow-down.svg" alt="icone, seta para baixo">
-                    <p class="paragrafo"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam. Consequatur voluptatum sunt explicabo quibusdam ipsam facilis vero, eius quis nam!</p>
-                </div>
-
-                <div class="duvida"> 
-                    <h3>Quais espécies de animais a clínica atende?</h3>
-                    <img src="./img/arrow-down.svg" alt="icone, seta para baixo">
-                    <p class="paragrafo"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam. Consequatur voluptatum sunt explicabo quibusdam ipsam facilis vero, eius quis nam!</p>
-                </div>
-
-                <div class="duvida"> 
-                    <h3>A clínica possui serviço de emergência?</h3>
-                    <img src="./img/arrow-down.svg" alt="icone, seta para baixo">
-                    <p class="paragrafo"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam. Consequatur voluptatum sunt explicabo quibusdam ipsam facilis vero, eius quis nam!</p>
-                </div>
-
-                <div class="duvida"> 
-                    <h3>A clínica oferece serviços de banho e tosa?</h3>
-                    <img src="./img/arrow-down.svg" alt="icone, seta para baixo">
-                    <p class="paragrafo"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam. Consequatur voluptatum sunt explicabo quibusdam ipsam facilis vero, eius quis nam!</p>
-                </div>
-
-            </div>
-        </section>
-
-
-
-
-       
+          <div class="duvida">
+            <h3>A clínica oferece serviços de banho e tosa?</h3>
+            <img src="./img/arrow-down.svg" alt="icone, seta para baixo" />
+            <p class="paragrafo">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+              ut quasi reprehenderit commodi amet cum. Sit a impedit quibusdam.
+              Consequatur voluptatum sunt explicabo quibusdam ipsam facilis
+              vero, eius quis nam!
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
-</html> 
+
+    <footer class="footer">
+      <div class="footer-container-info">
+        <div class="footer footer-logo">
+          <img src="./img/logo.svg" alt="logo petcare" /> <br /><br />
+          <p>Aqui a vida do seu pet é mais feliz!</p>
+        </div>
+
+        <nav class="footer footer-nav">
+          <p class="footer-title">Links Rápidos</p>
+          <br />
+          <a href="#inicio" class="footer-a">Início</a><br />
+          <a href="#clinica" class="footer-a">Clínica</a><br />
+          <a href="#farmacia" class="footer-a">Farmácia</a><br />
+          <a href="#duvidas" class="footer-a">Dúvidas</a><br />
+        </nav>
+
+        <div class="footer footer-contato">
+          <p class="footer-title">Encontre-nos</p>
+          <br />
+          <p>Whatsapp: <a class="footer-link">(22) 4444-5555</a></p>
+          <br />
+          <p>Email: <a class="footer-link">petcare@petcare.com</a></p>
+          <br />
+          <p>Endereço: Rua dos Pets, 1 - Centro - Petlândia</p>
+          <br />
+        </div>
+      </div>
+
+      <div class="footer-container-dev">
+        <p class="footer-paragrafo">
+          Desenvolvido por @nicollyalmeida 2025 -
+          <a href="https://github.com/" class="footer-link-redes">Github</a>
+          <a href="https://br.linkedin.com/" class="footer-link-redes"
+            >Linkedin</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
