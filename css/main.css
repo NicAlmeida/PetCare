@@ -1,0 +1,13 @@
+/* Reset do Browser */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #263138;
+    font-family: "Roboto", sans-serif;
+
+}
+
