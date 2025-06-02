@@ -139,12 +139,15 @@ h1 strong{
     gap: 32px;
     padding: 80px 80px 24px 80px;
     position: relative;
-    margin-bottom: 90px;
-    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#clinica img{
+    margin-top: 50px;
 }
 
 .titulo-clinica{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 li {
