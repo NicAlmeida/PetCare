@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  scroll-padding-top: 130px; /* Ajusta para a altura do seu menu fixo */
+}
+
 /* Reset do Browser */
 *{
     box-sizing: border-box;
@@ -9,26 +18,35 @@
 
 body {
     color: #263138;
+    background-color: #F5F1EB;
     font-family: "Roboto", sans-serif;
 
 }
 
 /* HEADER - Menu */
 .menu{
-    background-color: #FF9A6C;
+    background-color: #F5F1EB;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 80px;   
+    padding: 24px 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .menu nav a {
-    color: #FFF;
+    color: #9A5FF5;
     font-weight: 600;
-    padding: 20px;
+    padding: 5px 10px;
     text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.menu nav a:hover {
+    background-color: #9A5FF5;
+    color: #FFF;
+}
 /* Fixar Menu - Topo */
 .menu {
     position: fixed;
@@ -39,7 +57,6 @@ body {
 }
 
 
-
 /* Config da Seção INÍCIO */
 
 #inicio {
@@ -48,12 +65,22 @@ body {
     gap: 32px;
     padding: 80px 80px 24px 80px;
     position: relative;
+    padding-left: 0px;
+    margin-top:150px;
 }
 
 h1 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900px;
     margin-top: 32px;
+}
+
+h1 strong{
+    color: #9A5FF5;
+}
+
+#inicio h1{
+    font-size: 45px;
 }
 
 .paragrafo {
@@ -63,8 +90,8 @@ h1 {
 }
 
 .botao {
-    background-color: #FF9A6C;
-    border-radius: 8px;
+    background-color: #9A5FF5;
+    border-radius: 80px;
     color: #FFF;
     padding: 16px 32px;
     text-decoration: none;
@@ -72,19 +99,19 @@ h1 {
 
 
 .botao:hover{
-    background-color: #e76e36;
+    background-color: #6b28cf;
     transition: 0.5s;  
 }
 
 .botao-transparente {
     background-color: transparent;
-    color: #FF725E;
+    color: #9A5FF5;
     padding: 16px 32px;
     text-underline-offset: 4px;
 }
 
 .botao-transparente:hover{
-    color: #a45eff;
+    color: #6b28cf;
     transition: 0.5s;
 }
 
