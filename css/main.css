@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  scroll-padding-top: 130px; /* Ajusta para a altura do seu menu fixo */
+}
+
 /* Reset do Browser */
 *{
     box-sizing: border-box;
@@ -9,26 +18,35 @@
 
 body {
     color: #263138;
+    background-color: #F5F1EB;
     font-family: "Roboto", sans-serif;
 
 }
 
 /* HEADER - Menu */
 .menu{
-    background-color: #FF9A6C;
+    background-color: #F5F1EB;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 80px;   
+    padding: 24px 80px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .menu nav a {
-    color: #FFF;
+    color: #9A5FF5;
     font-weight: 600;
-    padding: 20px;
+    padding: 5px 10px;
     text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
+.menu nav a:hover {
+    background-color: #9A5FF5;
+    color: #FFF;
+}
 /* Fixar Menu - Topo */
 .menu {
     position: fixed;
@@ -39,7 +57,6 @@ body {
 }
 
 
-
 /* Config da Seção INÍCIO */
 
 #inicio {
@@ -48,12 +65,22 @@ body {
     gap: 32px;
     padding: 80px 80px 24px 80px;
     position: relative;
+    padding-left: 0px;
+    margin-top:150px;
 }
 
 h1 {
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 900px;
     margin-top: 32px;
+}
+
+h1 strong{
+    color: #9A5FF5;
+}
+
+#inicio h1{
+    font-size: 45px;
 }
 
 .paragrafo {
@@ -63,8 +90,8 @@ h1 {
 }
 
 .botao {
-    background-color: #FF9A6C;
-    border-radius: 8px;
+    background-color: #9A5FF5;
+    border-radius: 80px;
     color: #FFF;
     padding: 16px 32px;
     text-decoration: none;
@@ -72,19 +99,19 @@ h1 {
 
 
 .botao:hover{
-    background-color: #e76e36;
+    background-color: #6b28cf;
     transition: 0.5s;  
 }
 
 .botao-transparente {
     background-color: transparent;
-    color: #FF725E;
+    color: #9A5FF5;
     padding: 16px 32px;
     text-underline-offset: 4px;
 }
 
 .botao-transparente:hover{
-    color: #a45eff;
+    color: #6b28cf;
     transition: 0.5s;
 }
 
@@ -112,12 +139,15 @@ h1 {
     gap: 32px;
     padding: 80px 80px 24px 80px;
     position: relative;
-    margin-bottom: 90px;
-    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+#clinica img{
+    margin-top: 50px;
 }
 
 .titulo-clinica{
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 li {
@@ -131,33 +161,35 @@ ul{
 
 /* Config da Seção FARMÁCIA */
 #farmacia {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 32px;
-    position: relative;
+  background-color: #FFD9D9;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: -40px;
+  margin-bottom: 50px;
 }
 
-.farmacia-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    margin-top: 100px;
+ 
+/* Container do conteúdo */
+.farmacia-container {
+  background-color: #F5F1EB;
+  border-radius: 24px;
+  max-width: 1000px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
-
-
+ 
 .img-farmacia{
     margin-top: 100px;
-    margin-bottom: 40px;
+    border-radius: 25px;
 }
-
+ 
 .paragrafo-farmacia{
-    line-height: 150%;
-    margin-top: 50px;
-    margin-left: 400px;
-    margin-right: 400px;
+    margin-top: 80px;
 }
 
 /* Config da Seção DÚVIDAS */
@@ -168,45 +200,49 @@ ul{
     gap: 64px;
     padding: 80px;
 }
-
-.duvidas-container{
-    margin-top: 110px;
-}
-
+ 
+ 
 .duvidas-title{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    color: #000000;
+    font-size: 32px;
 }
-
+ 
 .duvida{
     position: relative;
 }
-
+ 
 .duvida h3{
-    border: 2px solid #FF725E;
-    border-radius: 8px;
+    border: 2px solid #9A5FF5;
+    border-radius: 15px;
     padding: 24px;
+    color: #000000;
 }
-
+ 
 .duvida img{
     position: absolute;
     top: 32px;
     right: 24px;
 }
 
+.duvidas-img{
+    border-radius: 25px;
+    margin-top: 27px;
+}
+ 
 .duvida .paragrafo{
-    border-right: 2px solid #FF725E;
-    border-bottom: 2px solid #FF725E;
-    border-left: 2px solid #FF725E;
+    border-right: 2px solid #9A5FF5;
+    border-bottom: 2px solid #9A5FF5;
+    border-left: 2px solid #9A5FF5;
     border-radius: 0 0 8px 8px;
-    margin-top: -6px;
-
+    margin-top: -11px;
     padding: 10px 24px;
     opacity: 0;
     height: 0;
     overflow: hidden;
     transition: 0.3s;
 }
-
+ 
 .duvida.ativa .paragrafo{
     opacity: 1;
     height: fit-content;
@@ -217,7 +253,7 @@ ul{
 
 /* Footer */
 .footer-container-info{
-    background-color: #fde3db;
+    background-color: #E0CFFC;
     display: flex;
     padding: 70px;
     justify-content: space-between;
@@ -229,7 +265,7 @@ ul{
 }
 
 .footer-a:hover{
-    color: #a45eff;
+    color: #6b28cf;
 }
 
 .footer-nav{
@@ -244,17 +280,17 @@ ul{
 
 
 .footer-link, .footer-link-redes{
-    color: #FF725E;
+    color: #9A5FF5;
     text-decoration: none;
 }
 
 
 .footer-link:hover{
-    color: #a45eff;
+    color: #6b28cf;
 }
 
 .footer-link-redes:hover{
-    color: #a45eff;
+    color: #6b28cf;
     transition: 0.5s;
 }
 
@@ -263,7 +299,7 @@ ul{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #263138;
+    background-color: #000;
 }
 
 .footer-container-dev p{
