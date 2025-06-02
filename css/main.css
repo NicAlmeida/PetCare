@@ -253,7 +253,7 @@ ul{
 
 /* Footer */
 .footer-container-info{
-    background-color: #fde3db;
+    background-color: #E0CFFC;
     display: flex;
     padding: 70px;
     justify-content: space-between;
@@ -265,7 +265,7 @@ ul{
 }
 
 .footer-a:hover{
-    color: #a45eff;
+    color: #6b28cf;
 }
 
 .footer-nav{
@@ -280,17 +280,17 @@ ul{
 
 
 .footer-link, .footer-link-redes{
-    color: #FF725E;
+    color: #9A5FF5;
     text-decoration: none;
 }
 
 
 .footer-link:hover{
-    color: #a45eff;
+    color: #6b28cf;
 }
 
 .footer-link-redes:hover{
-    color: #a45eff;
+    color: #6b28cf;
     transition: 0.5s;
 }
 
@@ -299,7 +299,7 @@ ul{
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-color: #263138;
+    background-color: #000;
 }
 
 .footer-container-dev p{
