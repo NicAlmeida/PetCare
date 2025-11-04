@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f1eb;
+  color: #263138;
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+    background-color: #F5F1EB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu p{
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 60px;
+}
+
+.menu img{
+    margin-left: 60px;
+
+}
+
+
+
+.container {
+    max-width: 1200px;
+    margin: 150px auto 50px auto;
+    padding: 0 40px;
+}
+
+.container h1 {
+    font-size: 32px;
+    color: #263138;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #9A5FF5; /
+    padding-bottom: 10px;
+}
+
+.consultas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consulta-card {
+    background-color: #FFFFFF;
+    border-left: 8px solid #9A5FF5;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.consulta-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #E0CFFC;
+}
+
+.card-data {
+    font-size: 16px;
+    font-weight: bold;
+    color: #263138;
+}
+
+.card-animal {
+    background-color: #E0CFFC;
+    color: #263138;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.card-body p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    color: #555;
+}
+
+.card-body strong {
+    color: #263138;
+}
+
+.sem-consultas {
+    text-align: center;
+    font-size: 16px;
+    padding: 40px;
+    border: 2px dashed #9A5FF5;
+    border-radius: 8px;
+    color: #555;
+}
+
+.acoes {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.flash-message p {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.flash-success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.flash-error, .flash-warning {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.botao {
+    background-color: #9A5FF5;
+    border-radius: 80px;
+    color: #fff;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+
+.botao:hover{
+    background-color: #6b28cf;
+    transition: 0.5s;
+}
+
+.botao-transparente {
+    background-color: transparent;
+    color: #9A5FF5;
+    padding: 16px 32px;
+    text-underline-offset: 4px;
+}
+
+.botao-transparente:hover{
+    color: #6b28cf;
+    transition: 0.5s;
+}

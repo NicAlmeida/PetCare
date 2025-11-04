@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Faça seu Login!</title>
+    <link rel="icon" type="image/png" href="./static/images/vector.png">
+    <link rel="stylesheet" href="./static/css/login.css" />
+    <script src="./static/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="menu">
+      <a href="{{ url_for('home') }}">
+        <img
+          src="./static/images/logo-pet-care.png"
+          alt="logo petcare"
+          width="70"
+          height="50"
+        />
+      </a>
+    </header>
+
+    <div class="container">
+      <div class="login-container">
+        <h2>Faça seu Login</h2>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="flash-message {{ category }}">{{ message }}</div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+
+        <form method="post">
+          <div class="input-group">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button class="button-login" type="submit">Entrar</button>
+        </form>
+
+        <div class="divisor">
+          <span>ou</span>
+        </div>
+
+        <form action="{{ url_for('cadastro') }}">
+          <button class="button-cadastrar" type="submit">
+            Criar novo usuário
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

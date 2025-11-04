@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento Veterinário</title>
+    <link rel="icon" type="image/png" href="../static/images/vector.png">
+    <link rel="stylesheet" href="../static/css/agendarConsulta.css" />
+    <script src="../static/js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="menu">
+      <a href="{{ url_for('home') }}">
+        <img src="../static/images/logo-pet-care.png" alt="logo petcare" width="70px" height="50px" />
+      </a>
+      <p>Agendamento de Consulta Veterinária</p>
+    </header>
+
+
+    <form action="{{ url_for('agendar_consulta') }}" method="POST">
+      <div>
+        <h2>Dados do Tutor</h2>
+        <label for="nomeTutor">Nome Completo:</label>
+        <input type="text" id="nomeTutor" name="nomeTutor" required  placeholder="Ex: Maria da Silva Souza" />
+
+        <label for="cpfTutor" >CPF:</label>
+        <input type="number" id="cpfTutor" name="cpfTutor" required  placeholder="000.000.000-00"/>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required placeholder="(11) 91234-5678" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email"  placeholder="Ex: maria.silva@email.com" />
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"  placeholder="Rua das Flores, 123 – Centro, São Paulo/SP" />
+      </div>
+
+
+      <div>
+        <h2>Dados do Animal</h2>
+        <label for="nomeAnimal">Nome do Animal:</label>
+        <input type="text" id="nomeAnimal" name="nomeAnimal" required placeholder="Ex: Thor" />
+
+        <label for="especie">Espécie:</label>
+        <select id="especie" name="especie" required>
+          <option value="">Selecione</option>
+          <option value="cão">Cão</option>
+          <option value="gato">Gato</option>
+          <option value="outro">Outro</option>
+        </select>
+
+        <label for="raca">Raça:</label>
+        <input type="text" id="raca" name="raca"  placeholder="Ex: Golden Retriever" />
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo">
+          <option value="">Selecione</option>
+          <option value="macho">Macho</option>
+          <option value="fêmea">Fêmea</option>
+        </select>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" min="0"  placeholder="Ex: 3"/>
+
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" name="peso" step="0.1" min="0" placeholder="Ex: 12.5"/>
+      </div>
+
+
+      <div>
+        <h2>Motivo da Consulta</h2>
+        <label for="motivo">Selecione o motivo:</label>
+        <select id="motivo" name="motivo" required>
+          <option value="">Selecione</option>
+          <option value="checkup">Check-up de rotina</option>
+          <option value="vacinacao">Vacinação</option>
+          <option value="castracao">Castração</option>
+          <option value="doenca">Doença / Sintoma</option>
+          <option value="exame">Exame laboratorial / imagem</option>
+        </select>
+
+        <label for="observacoes">Observações adicionais:</label>
+        <textarea id="observacoes" name="observacoes" rows="4"  placeholder="Ex: Meu cachorro está mancando há dois dias, parece sentir dor na pata traseira direita."></textarea>
+      </div>
+
+      <div>
+        <h2>Data e Horário</h2>
+        <label for="dataConsulta">Data desejada:</label>
+        <input type="date" id="dataConsulta" name="dataConsulta" required />
+
+        <label for="horaConsulta">Horário preferido:</label>
+        <input type="time" id="horaConsulta" name="horaConsulta" />
+      </div>
+
+      <div class="container-confirmacao">
+        <p>Ao agendar a consulta aceito os termos de atendimento e política de cancelamento.</p>
+        <button type="submit">Agendar Consulta</button>
+      </div>
+
+    </form>
+  </body>
+</html>
