@@ -37,7 +37,7 @@ def login():
     next_page = request.args.get('next')
     if 'username' in session:
         flash(f'Você já está logado como {session["username"]}.', 'info')
-        return redirect(next_page or url_for('consultas'))
+        return redirect(next_page or url_for('bem_vindo', username=session['username']))
 
     if request.method == 'POST':
         username = request.form['username']
@@ -49,7 +49,7 @@ def login():
         if username in usuarios and usuarios[username]['senha'] == password:
             session['username'] = username
             flash('Login efetuado com sucesso!', 'success')
-            return redirect(next_page or url_for('consultas'))
+            return redirect(next_page or url_for('bem_vindo', username=username))
         else:
             flash('Credenciais inválidas.', 'danger')
     return render_template('login.html')
@@ -108,6 +108,20 @@ def consultas():
 @app.route('/sucesso', methods=['GET'])
 def sucesso():
     return render_template('sucesso.html')
+
+
+@app.route('/bemvindo/<username>', methods=['GET'])
+def bem_vindo(username):
+    if 'username' not in session:
+        flash('Você precisa estar logado para acessar essa página.', 'warning')
+        return redirect(url_for('login'))
+
+    if session['username'] != username:
+        flash('Você só pode acessar a sua própria página.', 'danger')
+        return redirect(url_for('bem_vindo', username=session['username']))
+
+    return render_template('bemvindo.html', usuario=username)
+
 
 if __name__ == '__main__':
     app.run(debug=True)
